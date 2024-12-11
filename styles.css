@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    line-height: 1.6;
+    background-color: #D9D9D9; 
+    color: #000000;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(to bottom, #6c0505, #470202);
+    color: #d9d9d9;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin: 5px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease; 
+}
+
+nav ul li a:hover {
+    color: #ccc; 
+}
+
+nav ul li a img {
+    width: 30px;
+}
+
+#apresentacao {
+    text-align: center;
+    padding: 50px 20px;
+    background: #D9D9D9;
+}
+
+.apresentacao-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#apresentacao img {
+    width: 300px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.texto-apresentacao {
+    text-align: left;
+}
+
+#apresentacao h1 {
+    font-size: 2.5em; 
+    margin-bottom: 10px;
+}
+
+#apresentacao p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0;
+}
+
+#habilidades {
+    padding: 20px;
+    background: linear-gradient(to bottom, #6c0505, #470202);
+    text-align: center;
+}
+
+#habilidades h2 {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades ul li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.593);
+    transition: all 0.5s ease;
+}
+
+#habilidades ul li:hover {
+    background: #000000; 
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.593);
+    color: white;
+}
+
+.sobre-mim {
+    background-image: url('imgs/backsobre.png'); 
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #000000; 
+}
+
+.sobre-mim-img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.sobre-mim-card {
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: none;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.sobre-mim-card .card-text {
+    font-size: 1.130rem;
+    line-height: 1;
+}
+
+footer {
+    background: linear-gradient(to bottom, #6c0505, #470202);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-card, .contact-info-card {
+    background: #6c0505;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover, .contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px #ffffff;
+}
+
+.contact-card h3, .contact-info-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contact-card input, .contact-card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #ffffff;
+    color: #000000;
+}
+
+.contact-card input::placeholder, .contact-card textarea::placeholder {
+    color: #ccc;
+}
+
+.contact-card button {
+    background-color: #fff;
+    color: #470202;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-card button:hover {
+    background-color: #470202;
+    color: #000000;
+}
+
+button[type="submit"] {
+    background-color: #470202;
+    color: rgb(255, 255, 255);
+    border: 2px solid #6c0505; 
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #000000;
+    border-color: #6c0505;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+    justify-content: center;
+}
+
+.social-icons img:hover {
+    transform: scale(1);
+}
+
+.senai-logo-container {
+    margin-top: 20px;
+}
+
+.senai-logo {
+    width: 150px; 
+    height: auto;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.footer-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-image {
+    width: 825px; 
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
